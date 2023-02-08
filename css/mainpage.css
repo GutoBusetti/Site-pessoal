@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'inter', sans-serif;
+}
+
+body {
+    background-color: rgb(35, 6, 37);
+   /*
+    background: url('Faalaxy.jpg');
+   */ 
+    overflow-x: hidden;
+    transition: 500ms;
+}
+
+.pc img{
+    position: absolute;
+    width: 10cm;
+    height: 10cm;
+    left: 20cm;
+    top: 5cm;
+    /*
+    animation: anime-pc 5s infinite;
+    */transition: 500ms;
+}
+
+@keyframes anime-pc{
+    10%{
+        position: absolute;
+        top: 2cm;
+    }
+    20%{
+        position: absolute;
+        top: 3cm;
+    }
+    50%{
+        position: absolute;
+        top: 4cm;
+    }
+    80%{
+        position: absolute;
+        top: 3cm;
+    }
+    100%{
+        position: absolute;
+        top: 3cm;
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+.sobre{
+    transition: 500ms;
+}
+
+header {
+    display: block;
+    background-color: #24252a;
+    box-shadow: 0px 3px  10px #464646;
+}
+
+section{
+    background-color: #24252a;
+    border-radius: 5%;
+    transition: 500ms;
+}
+
+
+section:hover{
+    border-radius: 15%;
+    transition: 500ms;
+
+}
+.sobre p{
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    left: 11.0cm;
+    top:23cm;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.cucas img{
+    align-items: unset;
+    position: absolute;
+    left: 36cm;
+    top: 5cm;
+}
+
+.cucas .otavio img{
+    align-items: unset;
+    position: absolute;
+    left: 36cm;
+    top: 6.5cm;
+}
+
+.cucas .mary img{
+    align-items: unset;
+    position: absolute;
+    left: 36cm;
+    top: 8cm;
+}
+
+
+.sobre img{
+    position: absolute;
+    height: 5cm;
+    width: 5cm;
+    border-radius: 100%;
+    top: 22cm;
+    left: 5cm;
+}
+
+
+
+.vdeo h2{
+    position: absolute;
+    top: 28cm;
+    left: 8cm;
+    color: white;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.marvei p{
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    left: 16cm;
+    top: 37cm;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.marvei h3{
+    position: absolute;
+    top: 35cm;
+    left: 18cm;
+    color: white;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.mig h4{
+    position: absolute;
+    top: 42cm;
+    left: 13cm;
+    color: white;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.migman section {
+    background-color: black;
+}
+
+.mig img{
+    position: absolute;
+    top: 45cm;
+    left:18cm;
+}
+
+.mig .migis img{
+    position: absolute;
+    top: 45cm;
+    left: 7cm;
+    border-radius: 10%;
+}
+
+
+.marvei iframe {
+    position: absolute;
+    left: 6cm;
+    top: 35cm;
+}
+
+footer{
+    background-color: #0187a7;
+}
+footer p{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 8cm;
+    top: 46cm;
+}
+
+.vdeo p {
+    position: absolute;
+    top: 31cm;
+    left: 6cm;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vdeo video{
+    position: absolute;
+    top: 27cm;
+    left: 19cm;
+}
+
+
+.sobre h1{
+    color: white;
+    position: absolute;
+    font-size: 40px;
+    left: 13cm;
+    top:21cm;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    color: white;
+    width: 10px;
+}
+
+.user img{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 4.6cm;
+    top: 20px;
+}
+
+.user p{
+    position: absolute;
+    top: 1.4cm;
+    font-family: 'inter';
+    font-size: 10;
+    border-radius: 5%;
+    left: 30cm;
+
+}
+
+.user h2{
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: 'inter';
+    position: absolute;
+    top: 20px;
+    padding: 12px 7px;
+    background-color: #24252a;
+}
+
+.principal h1 {
+color: white;
+font-size: 40px;
+font-family: Arial, Helvetica, sans-serif;
+position: absolute;
+left: 5cm;
+top: 7cm;
+}
+.principal h2{
+    color: white;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 5cm;
+    top: 8.5cm;
+}
+span{
+    color:#0187a7;
+    font-family: Arial, Helvetica, sans-serif;
+    animation:  vin-anime 5s infinite linear;
+}
+
+@keyframes vin-anime {
+    10% {
+        color: #0186a7c2;
+    }
+    50% {
+        color: #0186a7d8;
+    }
+    80% {
+        color: #0186a771;
+    }
+    100% {
+        color: #0186a733;
+    }
+}
+
+.principal button {
+    border: none;
+    background-color: #0187a7;
+    padding: 20px 40px;
+    border-radius: 5px;
+    position: absolute;
+    left: 5cm;
+    top: 10cm;
+    transition: 500ms;
+    
+}
+.principal button:hover{
+    cursor: pointer;
+    background-color: #0186a754;
+    transition: 500ms;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 400;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;   
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    background-color: #0187a7;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 100px){
+    .principal button {
+        border: none;
+        background-color: #0187a7;
+        padding: 20px 40px;
+        border-radius: 5px;
+        position: absolute;
+        left: 1.5cm;
+        top: 5cm;
+    }
+
+    .vdeo h2{
+        position: absolute;
+        top: 28cm;
+        left: 8cm;
+        color: white;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .vdeo p {
+        position: absolute;
+        top: 31cm;
+        left: 6cm;
+        color: white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .vdeo video{
+        position: absolute;
+        top: 29cm;
+        left: 8cm;
+    }
+
+}
+
+.vdeo a{
+    color: red;
+    font-size: 20px;
+}
+
+.vdeo a:hover {
+    color: rgba(255, 0, 0, 0.493);
+}
+
+@media screen and (max-width: 999px){
+    .sobre p{
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        left: 5cm;
+        top:23cm;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+    .marvei iframe{
+        display: none;
+    }
+
+    .vdeo video{
+        display: none;
+    }
+
+    
+    
+    
+    .sobre img{
+        display: none;
+    }
+    
+    .sobre h1{
+        color: white;
+        position: absolute;
+        font-size: 40px;
+        left: 10cm;
+        top:21cm;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .marvei p{
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        left: 5cm;
+        top: 37cm;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .marvei h3{
+        position: absolute;
+        top: 34cm;
+        left: 10cm;
+        color: white;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media screen and (max-width: 499px){
+
+    .principal h1{
+        display: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 5.5cm;
+    }
+
+    .principal h2{
+        display: none;
+    }
+    
+    .principal button {
+        border: none;
+        background-color: #0187a7;
+        padding: 20px 40px;
+        border-radius: 5px;
+        position: absolute;
+        left: 1.5cm;
+        top: 11cm;
+    }
+    .marvei p{
+        display: none;
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        left: 5cm;
+        top: 37cm;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .marvei h3{
+        display: none;
+        position: absolute;
+        top: 34cm;
+        left: 10cm;
+        color: white;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+}
+
+@media screen and (max-width: 730px){
+    .principal h1 {
+        color: white;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        left: 1.5cm;
+        top: 4cm;
+        }
+    
+        .logo h1{
+            display: none;
+        }
+        .marvei p{
+            color: white;
+            position: absolute;
+            display: none;
+            font-size: 20px;
+            left: 5cm;
+            top: 37cm;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        footer p{ 
+            font-size: 20px;
+            position: absolute;
+            left: 1cm;
+        }
+        .marvei h3{
+            position: absolute;
+            top: 34cm;
+            left: 10cm;
+            display: none;
+            color: white;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .principal h1{
+            display: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 4.8cm;
+        }
+
+        .principal h2{
+            top: 6.5cm;
+            left: 1.5cm;
+            display: absolute;
+            color: white;
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .principal button {
+            border: none;
+            background-color: #0187a7;
+            padding: 20px 40px;
+            border-radius: 5px;
+            position: absolute;
+            left: 1.5cm;
+            top: 8.5cm;
+        }
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .mobile-menu-icon{
+        display: flex;
+    }
+
+    .nav-item{
+        display: none;
+    }
+
+    .login-button{
+        display: none;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: center;    
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1px;
+    }
+    .mobile-menu .nav-item{
+        display: flex;
+        padding: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: flex;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button{
+        width: 50%; 
+    }
+
+
+    .logo img{
+        position: absolute;
+    }
+    .sobre p{
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        left: 0.5cm;
+        top:22.5cm;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    .sobre img{
+        display: none;
+    }
+    
+    .sobre h1{
+        color: white;
+        position: absolute;
+        font-size: 50px;
+        left: 0.5cm;
+        top:21cm;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+    .open{
+        display: contents;
+    }
+    
+    .vdeo h2{
+        position: absolute;
+        top: 29.5cm;
+        left: 0.5cm;
+        color: white;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .vdeo p {
+        position: absolute;
+        top: 31cm;
+        left: 0.5cm;
+        color: white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+}
