@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+body{
+    height: 100vh;
+    /* background-color: #181414; */
+    background-image: linear-gradient(45deg, black, rgb(29, 29, 29), rgb(49, 49, 49), rgb(55, 55, 55));
+
+}
+
+.texto-principal {
+    padding: 25px;
+    position: absolute;
+    left: 50px;
+    top: 250px;
+}
+
+.texto-principal h1{
+    font-size: 50px;
+    font-family: 'inter';
+    z-index: -1;
+    color: #Daa520;
+    
+}
+
+.texto-principal h2{    
+    display: none;
+}
+
+header {
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+    transition: box-shadow .3s;
+}
+
+header:hover{
+    box-shadow: 0px 3px 20px #464646;
+}
+
+.image-robot img{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    z-index: -1;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-list a:hover{
+    color: #Daa520;
+    transition: 500ms;
+}
+
+.login-button a:hover{
+    transition: 500ms;   
+    padding: 2px;
+    color: #Daa520;
+    background-color: #0186a7ef;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.buttonhover {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    color: #fff;
+    background: #0186a7ef;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 15px;
+    transition: border-radius .5s;
+}
+
+.buttonhover:hover {
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px yellow;
+    transition: 500ms;
+    animation: btn-maluco 5s infinite;
+}
+
+@keyframes btn-maluco {
+    10%{ box-shadow: 10px 10px 20px blue; }
+    50%{ box-shadow: 10px 10px 20px black; }
+    100%{ box-shadow: 10px 10px 20px red; }
+}
+
+.buttonhover > a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+footer {
+    position: absolute;
+    width: 98.7%;
+    bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(64, 64, 64);
+    color: white;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    transition: border-radius .7s;
+}
+
+footer:hover {
+    border-radius: 20px 20px 0 0;
+}
+
+.texto-principal span {
+    transition: 500ms;
+    color: #0186a7ef;
+    animation: anime-color 5s infinite;
+}
+
+
+
+@keyframes anime-color {    
+    10%{
+        color: #0186a7ef;
+    }
+    25%{
+        color: #0186a7d8;
+    }
+    50%{
+        color: #0186a7b4;
+    }
+    85%{
+        color: #0186a794;
+    }
+    100%{
+        color: #0186a7dc;
+    }
+    
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+ion-icon {
+    color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 200px;
+    margin-right: 5px;
+    margin-bottom: 4px;
+}
+
+ion-icon:hover{
+    transition: 500ms;
+    color: black;
+    border-radius: 0;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .icons {
+        display: none;
+    }
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .texto-principal h1{
+        display: none;
+    }
+    .image-robot img{
+        display: block;
+        width: 250px;
+        height: 250px;
+        top: 300px;
+        z-index: -1;
+    }
+    .buttonhover{
+        position: relative;
+        display: block;
+        top: 10px;
+        left: -20px;
+    }
+    .texto-principal {
+        top: 150px;
+        left: 5px;
+    }
+
+    .texto-principal h2{
+        display: flex;
+        font-size: 8vw;
+        color: #Daa520;
+        font-family: 'inter', Arial, Helvetica, sans-serif;
+        position: relative;
+        z-index: -1;
+        color: #Daa520;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        z-index: 1;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+        z-index: 1;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+        z-index: 1;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+        z-index: 1;
+        display: none;
+    }
+    .open {
+        display: block;
+    }
+}
+
+
+/*** FEITO POR: LARISSA V. KICH ***/

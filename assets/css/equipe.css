@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+body{
+    height: 100vh;
+    /* background-color: #181414; */
+    background-image: linear-gradient(45deg, black, rgb(29, 29, 29), rgb(49, 49, 49), rgb(55, 55, 55));
+
+}
+
+header {
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+    transition: box-shadow .3s;
+}
+
+.image .m3 .git img {
+    width: 50px;
+    height: 50px;
+    margin-right: 200px;
+    margin-top: 200px;
+}
+
+.image .yuri .git img {
+    width: 50px;
+    height: 50px;
+    margin-top: 200px;
+}
+
+.image .miguel .git img {
+    width: 50px;
+    height: 50px;
+    margin-top: 200px;
+}
+
+.image .m3 img{
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: 150px;
+    right: 3vw;
+    transition: 500ms;
+}
+
+
+.image .yuri img {
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: 150px;
+    left: 38vw;
+    transition: 500ms;
+
+}
+
+.image .miguel img {
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: 150px;
+    left: 3vw;
+    transition: 500ms;
+}
+
+
+.image .m3 img:hover {
+    border-radius: 20px;
+    transition: 1200ms;
+    box-shadow: 0px 3px 20px #fc0000;
+}
+
+
+.image .yuri img:hover {
+    border-radius: 20px;
+    transition: 1200ms;
+    box-shadow: 0px 3px 20px #9cfd00;
+}
+
+.image .miguel img:hover {
+    border-radius: 20px;
+    transition: 1200ms;
+    box-shadow: 0px 3px 20px #5700f8;
+}
+
+header:hover{
+    box-shadow: 0px 3px 20px #464646;
+}
+.m3 h2{
+    font-size: arial;
+    position: absolute;
+    right: 10vw;
+    display: block;
+    top: 10vw;
+    background-color:red;
+    border-radius: 5px;
+    z-index: auto;
+    transition: 500ms;
+
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.822);
+
+}
+
+.miguel h2{
+    font-size: arial;
+    position: absolute;
+    left: 1vw;
+    top: 10vw;
+    background-color: blue;
+    border-radius: 5px;
+    transition: 500ms;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.822);
+    z-index: auto;
+}
+
+.yuri h2 {
+    z-index: auto;
+    font-size: arial;
+    position: absolute;
+    right: 47vw; 
+    top: 10vw;
+    background-color: yellow;
+    border-radius: 5px;
+    transition: 500ms;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.822);
+}
+
+.m3 h3 {
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    transition: 500ms;
+    font-size: arial;
+    right: 10vw;
+    top: 12.5vw;
+    background-color:red;
+    border-radius: 5px;
+    transition: 500ms;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.822);
+}
+
+.yuri h3 {
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    transition: 500ms;
+    font-size: arial;
+    right: 55vw;
+    top: 12.5vw;
+    background-color:yellow;
+    border-radius: 5px;
+    transition: 500ms;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.822);
+}
+
+.miguel h3 {
+    position: absolute;
+    font-size: 30px;
+    color: black;
+    transition: 500ms;
+    font-size: arial;
+    left: 2vw;
+    top: 12.5vw;
+    background-color:blue;
+    border-radius: 5px;
+    transition: 500ms;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.822);
+}
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-list a:hover{
+    color: rgb(211, 188, 188);
+    transition: 500ms;
+}
+
+.login-button a:hover{
+    transition: 500ms;   
+    padding: 2px;
+    color: #e9e2e2;
+    background-color: #0186a7ef;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 850px){
+        
+.image .m3 img{
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+
+    position: absolute;
+    top: 150px;
+    right: 3vw;
+    transition: 500ms;
+        z-index: -1;
+}
+
+
+.image .yuri img {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    
+    position: absolute;
+    top: 150px;
+    left: 38vw;
+    z-index: -1;
+    transition: 500ms;
+}
+
+.image .miguel img {
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+
+    position: absolute;
+    z-index: -1;
+    top: 150px;
+    left: 3vw;
+    transition: 500ms;
+}
+
+.miguel h2 {
+    font-size: 15px;
+    margin-top: 8vw;
+}
+
+.yuri h2 {
+    font-size: 15px;
+    margin-top: 8vw;
+}
+
+.m3 h2 {
+    display: block;
+    font-size: 15px;
+    margin-top: 8vw;
+}
+
+}
+
+
+@media screen and (max-width: 630px) {
+
+    
+.image .m3 .git img {
+    display: none;
+}
+
+.image .yuri .git img {
+    display: none;
+}
+
+.image .miguel .git img {
+    display: none;
+}
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+
+
+/*** FEITO POR: LARISSA V. KICH ***/
