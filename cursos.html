@@ -1,234 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    overflow: hidden;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
 
-body{
-    height: 100vh;
-    /* background-color: #181414; */
-    background-image: linear-gradient(45deg, black, rgb(29, 29, 29), rgb(49, 49, 49), rgb(55, 55, 55));
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1039990697236906095/1067201466617565335/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/cursos.css">
+    <title>M3 - Cursos</title>
+</head>
 
-}
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="https://cdn.discordapp.com/attachments/1039990697236906095/1067201466617565335/logo.png " alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="projetos.html" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="equipe.html" class="nav-link">Equipe</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="https://discord.gg/XbpmedTSez">Entrar</a></button>
+            </div>
 
-header {
-    background-color: #24252a;
-    box-shadow: 0px 3px 10px #464646;
-    transition: box-shadow .3s;
-}
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="projetos.html" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+            </ul>
 
-header:hover{
-    box-shadow: 0px 3px 20px #464646;
-}
-
-.image-robot img{
-    position: absolute;
-    top: 200px;
-    right: 0;
-    z-index: -1;
-}
-
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 6rem;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo h1 {
-    color: #fff;
-}
-
-#caixas {
-    display: inline-block;
-    margin-top: 50px;
-    height: 200px;
-    width: 500px;
-    padding: 15px;
-    border-radius: 10px;
-    margin-left: 55px;
-    color: white;
-    background-color: black;
-    transition: border-radius .5s;
-}
-
-#caixas:hover {
-    border-radius: 20px;
-}
-
-#caixas img {
-    height: 100px;
-    width: 150px;
-}
-
-#caixas .botdci img{
-    width: 100px;
-    height: 100px;
-}
-
-.buttons a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-    color: black;
-}
-
-.buttons {
-    padding: 6px 10px;
-    margin-top: 15px;
-    background-color: #Daa520;
-    border-radius: 10px;
-    border: none;
-    width: 150px;
-    transition: border-radius .5s, background-color .7s, opacity .5s;
-}
-
-.buttons:hover {
-    background-color: #0187a7;
-    border-radius: 20px;
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
-}
-
-.nav-list ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.nav-list a:hover{
-    color: #Daa520;
-    transition: 500ms;
-}
-
-.login-button a:hover{
-    transition: 500ms;   
-    padding: 2px;
-    color: #Daa520;
-    background-color: #0186a7ef;
-}
-
-.nav-item {
-    margin: 0 15px;
-}
-
-.nav-link {
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: #fff;
-    font-weight: 400;
-}
-
-.login-button button {
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #0187a7;
-}
-
-.login-button button a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-
-.mobile-menu-icon {
-    display: none;
-}
-
-.mobile-menu {
-    display: none;
-}
-
-.image-robot{
-    display: none;
-}
-
-@media screen and (max-width: 1100px) {
-    body {
-        overflow-y: auto;
-        background-color: black;
-    }
-}
-
-@media screen and (max-width: 2000px) {
-    .marginauto {
-        margin: auto;
-    }
-}
-
-@media screen and (max-width: 630px) {
-
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
-
-    .nav-item {
-        display: none;
-    }
-    .login-button {
-        display: none;
-    }
-    .mobile-menu-icon {
-        display: block;
-    }
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .mobile-menu .login-button {
-        display: block;
-        padding: 1rem 2rem;
-    }
-    .mobile-menu .login-button button {
-        width: 100%;
-    }
-    .open {
-        display: block;
-    }
-
-    #caixas {
-        display: block;
-        margin-top: 20px;
-        margin-left: 0px;
-        padding: 15px;
-        color: white;
-        background-color: black;
-    }
-    
-    #caixas img {
-        height: 100px;
-        width: 150px;
-    }
-    
-    #caixas .botdci img{
-        width: 100px;
-        height: 100px;
-    }
-}
-
-
-/*** FEITO POR: LARISSA V. KICH ***/
+            <div class="login-button">
+                <button><a href="https://discord.gg/XbpmedTSez">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="marginauto">
+                <div class="python" id="caixas">
+                    <div class="image-py"><img src="assets/img/python.png"></div>
+                    <h1>Curso Python</h1>
+                    <p>Aprenda python básico sem sair de sua casa</p>
+                    <button class="buttons"><a href="">Assine Já</a></button>
+                </div>
+                <div class="htmlcss" id="caixas">
+                    <div class="image-py"><img src="assets/img/hs.png"></div>
+                    <h1>Curso HTML e CSS</h1>
+                    <p>Aprenda HTML e CSS básico sem sair de casa</p>
+                    <button class="buttons"><a href="">Assine Já</a></button>
+                </div>
+                <div class="lua" id="caixas">
+                    <div class="image-py"><img src="assets/img/lua.png""></div>
+                    <h1>Curso LUA</h1>
+                    <p>Aprenda os conceitos básicos de .lua sem sair de casa</p>
+                    <button class="buttons"><a href="">Assine Já</a></button>
+                </div>
+                <div class="botdc" id="caixas">
+                    <div class="botdci"><img src="assets/img/disnake.png""></div>
+                    <h1>Curso Bot Discord</h1>
+                    <p>Aprenda como fazer um bot básico para Discord</p>
+                    <button class="buttons"><a href="">Assine Já</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
