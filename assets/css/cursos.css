@@ -48,12 +48,18 @@ header:hover{
 #caixas {
     display: inline-block;
     margin-top: 50px;
+    height: 200px;
     width: 500px;
     padding: 15px;
     border-radius: 10px;
     margin-left: 55px;
     color: white;
     background-color: black;
+    transition: border-radius .5s;
+}
+
+#caixas:hover {
+    border-radius: 20px;
 }
 
 #caixas img {
@@ -61,26 +67,33 @@ header:hover{
     width: 150px;
 }
 
-.python img {
-    width: 100px;
-    height: 100px;
-}
-
 #caixas .botdci img{
     width: 100px;
     height: 100px;
 }
 
-.python button{
+.buttons a {
     text-decoration: none;
-    background-color: #Daa520;
-   border-radius: 4px;
-}
-.python a {
-    text-decoration: none;
-    font-size: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
     color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.buttons {
+    padding: 6px 10px;
+    margin-top: 15px;
+    background-color: #Daa520;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    transition: border-radius .5s, background-color .7s, opacity .5s;
+}
+
+.buttons:hover {
+    background-color: #0187a7;
+    border-radius: 20px;
 }
 
 .nav-list {
@@ -116,6 +129,7 @@ header:hover{
     color: #fff;
     font-weight: 400;
 }
+
 .login-button button {
     border: none;
     padding: 10px 15px;
@@ -138,13 +152,25 @@ header:hover{
     display: none;
 }
 
-@media screen and (max-width: 990px) {
-    .image-robot{
-        display: none;
+.image-robot{
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        overflow-y: auto;
+        background-color: black;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .marginauto {
+        margin: auto;
     }
 }
 
 @media screen and (max-width: 630px) {
+
     .nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -182,6 +208,25 @@ header:hover{
     }
     .open {
         display: block;
+    }
+
+    #caixas {
+        display: block;
+        margin-top: 20px;
+        margin-left: 0px;
+        padding: 15px;
+        color: white;
+        background-color: black;
+    }
+    
+    #caixas img {
+        height: 100px;
+        width: 150px;
+    }
+    
+    #caixas .botdci img{
+        width: 100px;
+        height: 100px;
     }
 }
 
