@@ -13,6 +13,8 @@ body{
 
 }
 
+
+
 .texto-principal {
     padding: 25px;
     position: absolute;
@@ -246,7 +248,7 @@ ion-icon:hover{
     }
     .texto-principal {
         top: 150px;
-        left: 5px;
+        left: 25px;
     }
 
     .texto-principal h2{
@@ -272,6 +274,7 @@ ion-icon:hover{
         border: none;
         cursor: pointer;
     }
+    
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
